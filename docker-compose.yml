@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  vaultwarden:
+    image: vaultwarden/server:latest
+    container_name: vaultwarden
+    restart: always
+    ports:
+      - "8443:80"
+    volumes:
+      - ./vw-data:/data
+    environment:
+      - DOMAIN=https://192.168.245.128:8443
+      - ADMIN_TOKEN=YourSuperSecureAdminToken123!
+      - SIGNUPS_ALLOWED=true
+      - WEBSOCKET_ENABLED=true
