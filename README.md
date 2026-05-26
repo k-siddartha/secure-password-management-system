@@ -33,10 +33,18 @@ To demonstrate that I don't just *configure* security tools — but understand t
 
 📁 **File:** [`src/security_demo.py`](src/security_demo.py)
 
-### Run my custom demo:
-```bash
-# Install dependencies
-pip install -r requirements.txt
+### Prerequisites for the Custom Demo
 
-# Run the demo
-python src/security_demo.py
+- **Python 3.8 or higher** – [Download here](https://www.python.org/downloads/) if not installed.
+- **pip** (comes with Python) – Check with `pip --version`
+
+> 💡 **Optional but recommended:** Use a virtual environment to avoid conflicts:
+> ```bash
+> python -m venv venv
+> source venv/bin/activate   # On Windows: `venv\Scripts\activate`
+> ```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
